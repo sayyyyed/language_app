@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:language_app/dashboard/data/data.dart';
 import 'package:language_app/dashboard/header_dashboard.dart';
 import 'package:language_app/dashboard/list.dart';
+import 'package:language_app/dashboard/list_vertical.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -50,6 +51,26 @@ class Dashboard extends StatelessWidget {
               SizedBox(
                 child: HorizontalSliderListView(data: data),
               ),
+              Container(
+                margin: EdgeInsets.only(top: 15, bottom: 15, left: 20),
+                child: Row(
+                   mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Deutsch',
+                      style: TextStyle(
+                        color: Colors.black87,
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                  margin: EdgeInsets.only(bottom: 15, left: 20),
+                child: VerticalListView(data: data_vertical),
+              )
             ],
           ),
         ),
