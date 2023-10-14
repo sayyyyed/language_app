@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:language_app/dashboard/data/progress_bar.dart';
 import 'package:language_app/style/text.dart';
@@ -13,7 +15,7 @@ class HorizontalSliderListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 280, // Set your desired fixed height
-      child: Container(
+      child: SizedBox(
         height: 280, // Set the same height for the container
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
@@ -58,13 +60,10 @@ class HorizontalSliderListView extends StatelessWidget {
                               headingFirst(fontSize: 20, color: Colors.black87),
                         ),
                       ),
-                      Container(
-                        // margin: EdgeInsets.only(left: 20.0),
-                        child: Text(
-                          item['description'],
-                          style:
-                              headingSec(fontSize: 15, color: Colors.black87),
-                        ),
+                      Text(
+                        item['description'],
+                        style:
+                            headingSec(fontSize: 15, color: Colors.black87),
                       ),
                       SizedBox(height: 8.0),
                       DividedProgressBar(

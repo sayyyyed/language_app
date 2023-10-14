@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:language_app/courses/courses.dart';
 import 'package:language_app/dashboard/main_dashboard.dart';
 // import 'package:language_app/homepage.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  Dashboard(),
+      home:  Courses(),
     );
   }
 }

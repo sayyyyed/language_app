@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors
-
 import 'package:flutter/material.dart';
 import 'package:language_app/dashboard/data/data.dart';
 import 'package:language_app/dashboard/header_dashboard.dart';
@@ -18,8 +17,7 @@ class Dashboard extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              profileHeader(context), // Your existing widget
-              // MyNewWidget(), // Use the new widget here
+              profileHeader(context),
               Container(
                 margin: EdgeInsets.only(top: 15, bottom: 15, left: 20),
                 child: Row(
@@ -45,19 +43,16 @@ class Dashboard extends StatelessWidget {
                   ],
                 ),
               ),
-
-              // Add space here
-
               SizedBox(
                 child: HorizontalSliderListView(data: data),
               ),
               Container(
-                margin: EdgeInsets.only(top: 15, bottom: 15, left: 20),
+                margin: EdgeInsets.only(top: 20, bottom: 20, left: 20),
                 child: Row(
                    mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
-                      'Deutsch',
+                      'Courses',
                       style: TextStyle(
                         color: Colors.black87,
                         fontSize: 20.0,
