@@ -50,15 +50,12 @@ class HorizontalSliderListView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Container(
-                        // margin: EdgeInsets.only(left: 20.0),
-                        child: Text(
-                          //text align left
+                      Text(
+                        //text align left
 
-                          item['title'],
-                          style:
-                              headingFirst(fontSize: 20, color: Colors.black87),
-                        ),
+                        item['title'],
+                        style:
+                            headingFirst(fontSize: 20, color: Colors.black87),
                       ),
                       Text(
                         item['description'],

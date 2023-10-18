@@ -52,7 +52,7 @@ Column CoursesHeader(BuildContext context) {
                                             style: headingSec(fontSize: 25),
                                           ),
                                           SizedBox(
-                                            width: 150,
+                                            width: 180,
                                           ),
                                           Icon(
                                             Icons.arrow_back,

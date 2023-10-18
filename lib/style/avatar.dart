@@ -10,7 +10,7 @@ class AvatarWithText extends StatelessWidget {
   AvatarWithText({
     required this.imagePath,
     required this.text,
-    this.avatarRadius = 70.0,
+    this.avatarRadius = 65.0,
     this.borderThickness = 2.0,
     this.borderColor = Colors.blue,
   });
