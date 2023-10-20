@@ -1,5 +1,6 @@
 
   import 'package:flutter/material.dart';
+import 'package:language_app/dashboard/main_dashboard.dart';
 import 'package:language_app/style/text.dart';
 
 Column CoursesHeader(BuildContext context) {
@@ -54,14 +55,25 @@ Column CoursesHeader(BuildContext context) {
                                           SizedBox(
                                             width: 180,
                                           ),
-                                          Icon(
-                                            Icons.arrow_back,
-                                            size: 30,
-                                            color: Colors.white,
-                                          )
+                                     
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        Dashboard()),
+                                              );
+                                            },
+                                            child: Icon(
+                                              Icons.arrow_back,
+                                              color: Colors.white,
+                                              size: 30.0,
+                                            ),
+                                          ),
                                         ],
                                       ),
-                                      Text('Kvaratskhelia',
+                                      Text('Wechselprapositionen',
                                           style: headingFirst(fontSize: 30)),
                                     ],
                                   ),

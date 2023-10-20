@@ -2,7 +2,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:language_app/courses/courses_header.dart';
-import 'package:language_app/courses/data_courses/courses_list.dart';
+import 'package:language_app/data/courses_list.dart';
+import 'package:language_app/description.dart';
 import 'package:language_app/style/text.dart';
 
 class Courses extends StatelessWidget {
@@ -11,27 +12,27 @@ class Courses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'My App',
         home: Scaffold(
             backgroundColor: Color.fromARGB(255, 233, 233, 233),
-            floatingActionButtonLocation: FloatingActionButtonLocation.miniStartFloat,
+            floatingActionButtonLocation:
+                FloatingActionButtonLocation.miniStartFloat,
             floatingActionButton: FloatingActionButton.extended(
               //border
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10.0))),
               backgroundColor: Color.fromARGB(221, 251, 185, 3),
               foregroundColor: Colors.black,
-              onPressed: () {
-                // Respond to button press
-              },
+              onPressed: () {},
               icon: Icon(Icons.menu),
-              label: Text('Browse Courses', style: headingFirst(fontSize: 12.0, color: Colors.black87)),
+              label: Text('Browse Courses',
+                  style: headingFirst(fontSize: 12.0, color: Colors.black87)),
             ),
             body: SingleChildScrollView(
                 child: Column(
               children: [
                 CoursesHeader(context),
-
                 Container(
                   margin:
                       EdgeInsets.only(top: 20, bottom: 15, left: 40, right: 40),
@@ -43,11 +44,10 @@ class Courses extends StatelessWidget {
                         style:
                             headingFirst(fontSize: 20, color: Colors.black87),
                       ),
-                      //long text for description
                       Container(
                         margin: EdgeInsets.only(top: 10),
                         child: Text(
-                          'Kvicha is a Georgian language learning app that helps you learn Georgian in a fun and interactive way. It is a great app for beginners and advanced learners alike. The app is available for both iOS and Android devices.',
+                          'Wechselprapositionen is a course that will help you to learn the prepositions that are used with the accusative and dative cases. This course is for A1.2 level students',
                           style:
                               headingFirst(fontSize: 12, color: Colors.black87),
                         ),
@@ -64,9 +64,13 @@ class Courses extends StatelessWidget {
                   ),
                   items: dataCourses
                       .map((course) => HeroCarouselCard(
-                            title: course['title'],
-                            description: course['description'],
-                            image: course['image'],
+                            title: course['title']!,
+                            description: course['description']!,
+                            image: course['image']!,
+                            category: course[
+                                'category']!, // Add similar checks for other fields
+                            difficulty: course['difficulity']!,
+                            time: course['time']!,
                           ))
                       .toList(),
                 ),
@@ -76,21 +80,40 @@ class Courses extends StatelessWidget {
 }
 
 class HeroCarouselCard extends StatelessWidget {
-  final String? title;
-  final String? description;
-  final String? image;
+  final String title;
+  final String description;
+  final String image;
+  final String category;
+  final String difficulty;
+  final String time;
 
   HeroCarouselCard({
     required this.title,
     required this.description,
     required this.image,
+    required this.category,
+    required this.difficulty,
+    required this.time,
   });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
-
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Desc(
+              image: image!, // Use the correct variable names
+              title: title!,
+              description: description!,
+              category: category!,
+              difficulty: difficulty!,
+              time: time!,
+            ),
+          ),
+        );
+      },
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -107,26 +130,25 @@ class HeroCarouselCard extends StatelessWidget {
                   color: Color.fromARGB(255, 255, 255, 255),
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-                child: Image(image: AssetImage(image!), height: 150)),
+                child: Image(image: AssetImage(image!), height: 130)),
             SizedBox(height: 0.0),
             Container(
-              margin: EdgeInsets.only(top: 20.0),
+              margin: EdgeInsets.only(top: 20.0, right: 10, left: 10),
               child: Text(
                 title!,
                 style: headingFirst(fontSize: 20, color: Colors.black87),
+                //handle overflow
+                overflow: TextOverflow.ellipsis,
               ),
             ),
             Container(
               margin: EdgeInsets.only(left: 20.0, top: 10.0),
               child: Text(
-                description!,
-                style: TextStyle(
-                  color: Colors.black87,
-                  fontSize: 12.0,
-                ),
+                description!.length > 100
+                    ? '${description!.substring(0, 75)}...'
+                    : description!,
               ),
             ),
-            //add clicked button named get started
             Container(
               margin: EdgeInsets.only(top: 15.0),
               child: TextButton(

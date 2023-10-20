@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors
 import 'package:flutter/material.dart';
-import 'package:language_app/dashboard/data/data.dart';
+import 'package:language_app/data/data.dart';
 import 'package:language_app/dashboard/header_dashboard.dart';
 import 'package:language_app/dashboard/list.dart';
 import 'package:language_app/dashboard/list_vertical.dart';
@@ -11,6 +11,7 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'My App',
       home: Scaffold(
         backgroundColor: Color.fromARGB(255, 233, 233, 233),
@@ -49,7 +50,7 @@ class Dashboard extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(top: 20, bottom: 20, left: 20),
                 child: Row(
-                   mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
                       'Courses',
@@ -63,7 +64,7 @@ class Dashboard extends StatelessWidget {
                 ),
               ),
               Container(
-                  margin: EdgeInsets.only(bottom: 15, left: 20),
+                margin: EdgeInsets.only(bottom: 15, left: 20),
                 child: VerticalListView(data: data_vertical),
               )
             ],
@@ -73,5 +74,3 @@ class Dashboard extends StatelessWidget {
     );
   }
 }
-
-

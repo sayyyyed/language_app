@@ -6,14 +6,14 @@ import 'package:language_app/style/text.dart';
             children: <Widget>[
               ClipRRect(
                 borderRadius: BorderRadius.only(
-                  bottomLeft:Radius.circular(20.0), // Adjust the radius as needed
-                  bottomRight: Radius.circular(20.0), // Adjust the radius as needed
+                  bottomLeft:Radius.circular(20.0), 
+                  bottomRight: Radius.circular(20.0), 
                 ),
                 child: SizedBox(
-                  width: MediaQuery.of(context).size .width, // Set the width as needed
-                  height: 225.0, // Set the height as needed
+                  width: MediaQuery.of(context).size .width, 
+                  height: 225.0, 
                   child: Container(
-                    color:Color.fromARGB(255, 36, 43, 99), // Background color
+                    color:Color.fromARGB(255, 36, 43, 99), 
                     child: Column(
                       children: [
                         Row(
@@ -40,15 +40,15 @@ import 'package:language_app/style/text.dart';
                                       Icons.favorite,
                                       size: 30,
                                       color: Colors.white,
-                                    ), // Replace with your first icon
+                                    ), 
                                     SizedBox(
                                         width:
-                                            20), // Adjust spacing between icons
+                                            20), 
                                     Icon(
                                       Icons.search,
                                       size: 30,
                                       color: Colors.white,
-                                    ), // Replace with your second icon
+                                    ), 
                                   ],
                                 ),
                               ),
@@ -58,7 +58,7 @@ import 'package:language_app/style/text.dart';
                         Container(
                           padding: EdgeInsets.only(
                               top:
-                                  10.0), // Add padding or adjust as needed
+                                  10.0),
                           child: Row(
                             children: [
                               Container(
@@ -104,14 +104,14 @@ import 'package:language_app/style/text.dart';
                                                     255,
                                                     234,
                                                     188,
-                                                    5), // Adjust the border color here
+                                                    5), 
                                                 width:
-                                                    2.0, // Adjust the border thickness here
+                                                    2.0, 
                                               ),
                                             ),
                                             child: Container(
                                               padding: EdgeInsets.all(
-                                                  8.0), // Adjust the padding to center the text
+                                                  8.0), 
                                               child: Center(
                                                 child: Text(
                                                   "5",

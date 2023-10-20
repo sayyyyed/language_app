@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 TextStyle headingSec({
   double fontSize = 25,
   Color color = Colors.white,
-  String fontFamily = 'Helvetica Neue',
+  // String fontFamily = 'Helvetica Neue',
 }) {
   return TextStyle(
     fontSize: fontSize,
     color: color, // Pass the color parameter to TextStyle
-    fontFamily: fontFamily,
+    // fontFamily: fontFamily,
   );
 }
 

@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:language_app/dashboard/data/progress_bar.dart';
+import 'package:language_app/data/progress_bar.dart';
 import 'package:language_app/style/text.dart';
 
 class HorizontalSliderListView extends StatelessWidget {
@@ -14,24 +13,22 @@ class HorizontalSliderListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 280, // Set your desired fixed height
+      height: 280,
       child: SizedBox(
-        height: 280, // Set the same height for the container
+        height: 280, 
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: data.length,
           itemBuilder: (context, index) {
             final item = data[index];
-
             return Container(
               margin: EdgeInsets.only(left: 20.0),
-              width: 180, // Width of each item
+              width: 180,
               decoration: BoxDecoration(
                 color: Color.fromARGB(255, 255, 255, 255),
                 borderRadius: BorderRadius.circular(10.0),
               ),
               child: Column(
-                // mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Container(
                     margin: EdgeInsets.only(bottom: 20.0),
@@ -43,7 +40,7 @@ class HorizontalSliderListView extends StatelessWidget {
                         fit: BoxFit.fill,
                       ),
                       borderRadius: BorderRadius.all(
-                          Radius.circular(10.0)), // Rounded corners
+                          Radius.circular(10.0)),
                     ),
                   ),
                   Column(
@@ -51,8 +48,6 @@ class HorizontalSliderListView extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        //text align left
-
                         item['title'],
                         style:
                             headingFirst(fontSize: 20, color: Colors.black87),
@@ -70,7 +65,6 @@ class HorizontalSliderListView extends StatelessWidget {
                       Text(
                         '${(double.parse(item['progress'].toString()) * 100).toInt()}% completed',
                         style: headingFirst(fontSize: 12, color: Color.fromARGB(221, 251, 185, 3))),
-                      
                     ],
                   ),
                 ],

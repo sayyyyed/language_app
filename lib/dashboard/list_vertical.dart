@@ -12,10 +12,10 @@ class VerticalListView extends StatelessWidget {
     return Column(
       children: data.map((item) {
         return SizedBox(
-          height: 100, // Set a fixed height for each container
+          height: 100, 
           child: Container(
             margin: EdgeInsets.only(
-                bottom: 20, right: 20), // Add margin to separate each container
+                bottom: 20, right: 20),
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 255, 255, 255),
               borderRadius: BorderRadius.circular(10.0),
@@ -25,8 +25,8 @@ class VerticalListView extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(left: 10),
                   child: Container(
-                    width: 60, // Set the width of the container
-                    height: 60, // Set the height of the container
+                    width: 60,
+                    height: 60, 
                     decoration: BoxDecoration(
                       color:
                           Colors.orange, // Set the background color to orange
@@ -46,10 +46,9 @@ class VerticalListView extends StatelessWidget {
                     ),
                   ),
                 ),
-
                 SizedBox(
                     width:
-                        15.0), // Add spacing between the CircleAvatar and the Column
+                        15.0), 
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,

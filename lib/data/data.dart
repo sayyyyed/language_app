@@ -29,14 +29,15 @@ final data_vertical = [
    
   },
   {
-    'heading': 'Karl der Große',
+    'heading': 'Conjunctions',
     'subheading': 'Course 1/5',
     
   },
   {
-    'heading': 'Fehlinger',
+    'heading': 'Adverbs',
     'subheading': 'Course 1/5',
    
   },
-  // Add more data items as needed
+
 ];
+ 
