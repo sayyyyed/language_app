@@ -29,7 +29,7 @@ class VerticalListView extends StatelessWidget {
                     height: 60, 
                     decoration: BoxDecoration(
                       color:
-                          Colors.orange, // Set the background color to orange
+                          Colors.orange,
                       borderRadius:
                           BorderRadius.circular(30), // Make it a circle
                       border: Border.all(
