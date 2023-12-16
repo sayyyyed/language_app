@@ -4,7 +4,6 @@ final dataCourses = [
   'category' : 'Wechselprapositonen',
   'description' : 'In this course you will learn how to use the relative clauses in German. Relative clauses are used to link sentences together and to form more complex sentences. They are introduced by relative pronouns such as der, die, das, welcher, welche, welches, was, and more. ',
   'image' :'assets/img/model_3.png',
-  //difficulity
   'difficulity' : 'A1.2',
   'time' : '10 min',
 

@@ -6,7 +6,12 @@ import 'package:language_app/dashboard/list.dart';
 import 'package:language_app/dashboard/list_vertical.dart';
 
 class Dashboard extends StatelessWidget {
-  const Dashboard({super.key});
+  final String? firstName;
+
+  final int? selectedIndex;
+
+  const Dashboard({Key? key, this.firstName, this.selectedIndex})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +23,7 @@ class Dashboard extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              profileHeader(context),
+              profileHeader(context, firstName: firstName),
               Container(
                 margin: EdgeInsets.only(top: 15, bottom: 15, left: 20),
                 child: Row(

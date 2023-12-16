@@ -26,7 +26,7 @@ class AvatarWithText extends StatelessWidget {
           foregroundColor: borderColor, // Set border color
           foregroundImage: AssetImage(imagePath), // Set the image again to show inside the border
         ),
-        SizedBox(height: 5), // Adjust this value for spacing
+        SizedBox(height: 0), // Adjust this value for spacing
         Text(
           text,
           style: TextStyle(fontSize: 16, color: Colors.white, fontFamily: 'Helvetica Rounded'),

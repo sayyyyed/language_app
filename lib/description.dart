@@ -39,19 +39,17 @@ class Desc extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [         
+          children: [
             Container(
               margin: EdgeInsets.only(left: 20, right: 20, top: 20),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
-                
                 child: Container(
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: Color.fromARGB(255, 122, 122, 122), 
+                      color: Color.fromARGB(255, 122, 122, 122),
                       width: 3.0,
                     ),
-                    
                   ),
                   child: Image.asset(
                     image,
@@ -64,17 +62,17 @@ class Desc extends StatelessWidget {
             ),
 
             //centered text
-           Container(
-  margin: EdgeInsets.all( 20),
-  child: Text(
-    title,
-    style: TextStyle(
-      fontSize: 25,
-      fontWeight: FontWeight.bold,
-       // Align the text to the center
-    ),textAlign: TextAlign.center,
-  ),
-),
+            Container(
+              margin: EdgeInsets.all(20),
+              child: Text(
+                title,
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -152,10 +150,9 @@ class Desc extends StatelessWidget {
               child: Text(
                 'Read More',
                 style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black
-                ),
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black),
               ),
               style: ElevatedButton.styleFrom(
                 primary: Color.fromARGB(221, 251, 185, 3),

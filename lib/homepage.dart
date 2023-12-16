@@ -5,6 +5,9 @@ import 'package:language_app/style/text.dart';
 import 'package:language_app/dashboard/main_dashboard.dart';
 
 class MyHomePage extends StatelessWidget {
+  final String? firstName;
+
+  MyHomePage({Key? key, this.firstName}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,14 +36,16 @@ class MyHomePage extends StatelessWidget {
                     style: headingSec(),
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Dashboard()),
-                    );
-                  },
-                  child: buildLanguageGrid(),
+                Container(
+                  
+                    // onTap: () {
+                    //   Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(builder: (context) => Dashboard( firstName: firstName)),
+                    //   );
+                    // },
+                    child: buildLanguageGrid(),
+                 
                 ),
               ],
             ),
@@ -49,26 +54,47 @@ class MyHomePage extends StatelessWidget {
       ),
     );
   }
-
-  Widget buildLanguageGrid() {
-    return GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 20.0,
-        mainAxisSpacing: 20.0,
-      ),
-      itemCount: languages.length,
-      shrinkWrap: true,
-      // ignore: prefer_const_constructors
-      physics: NeverScrollableScrollPhysics(),
-      itemBuilder: (BuildContext context, int index) {
-        return AvatarWithText(
+Widget buildLanguageGrid() {
+  return GridView.builder(
+    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      crossAxisCount: 2,
+      crossAxisSpacing: 20.0,
+      mainAxisSpacing: 20.0,
+    ),
+    itemCount: languages.length,
+    shrinkWrap: true,
+    physics: NeverScrollableScrollPhysics(),
+    itemBuilder: (BuildContext context, int index) {
+      return GestureDetector(
+        onTap: () {
+          // Handle grid item tap, you can navigate to a new screen or perform other actions
+          onGridItemTap(index + 1); // Pass the index starting from 1
+          Navigator.push(
+                       context,
+                       MaterialPageRoute(builder: (context) => Dashboard( firstName: firstName,
+                       selectedIndex: index,)),
+                      );
+        },
+        child: AvatarWithText(
           imagePath: languages[index].imagePath,
           text: languages[index].name,
-        );
-      },
-    );
-  }
+        ),
+      );
+    },
+  );
 }
 
+void onGridItemTap(int index) {
+  // Handle grid item tap here
+  print('Grid item tapped! Index: $index');
 
+  // You can navigate to a new screen or perform other actions with the index
+  // Example:
+  // Navigator.push(
+  //   context,
+  //   MaterialPageRoute(
+  //     builder: (context) => SomeScreen(index: index),
+  //   ),
+  // );
+}
+}

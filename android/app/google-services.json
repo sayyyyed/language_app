@@ -1,0 +1,30 @@
+{
+    "project_info": {
+        "project_number": "263667177154",
+        "firebase_url": "https://lang-app-d750a-default-rtdb.firebaseio.com",
+        "project_id": "lang-app-d750a",
+        "storage_bucket": "lang-app-d750a.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:263667177154:android:e6c858e51fb278133d8d5b",
+                "android_client_info": {
+                    "package_name": "com.example.language_app"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyDZl8WC38SYZfQU1ecuvxIGak8WZjVo_UA"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
