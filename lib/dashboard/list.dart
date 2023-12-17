@@ -33,7 +33,7 @@ class HorizontalSliderListView extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return Courses(courses: courses);
+                      return Courses(courses: courses, category: courseData['title']);
                     },
                   ),
                 );

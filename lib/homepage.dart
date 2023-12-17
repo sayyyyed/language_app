@@ -40,6 +40,19 @@ class MyHomePage extends StatelessWidget {
                     child: buildLanguageGrid(),
                  
                 ),
+                SizedBox(height: 25),
+                Container(
+                  margin: EdgeInsets.only(),
+                  child: Text(
+                    'Coming Soon',
+                    style: headingSec(fontSize: 20),
+                  ),
+                ),
+                SizedBox(height: 25),
+                Container( 
+                    child: buildLanguageGridUnavailable(),
+                 
+                ),
               ],
             ),
           ),
@@ -78,16 +91,31 @@ Widget buildLanguageGrid() {
 }
 
 void onGridItemTap(int index) {
-  // Handle grid item tap here
+
   print('Grid item tapped! Index: $index');
 
-  // You can navigate to a new screen or perform other actions with the index
-  // Example:
-  // Navigator.push(
-  //   context,
-  //   MaterialPageRoute(
-  //     builder: (context) => SomeScreen(index: index),
-  //   ),
-  // );
 }
+Widget buildLanguageGridUnavailable() {
+  print(languagesUnavailable.length);
+
+  return GridView.builder(
+    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      crossAxisCount: 2,
+      crossAxisSpacing: 20.0,
+      mainAxisSpacing: 20.0,
+    ),
+    itemCount: languagesUnavailable.length,
+    shrinkWrap: true,
+    physics: NeverScrollableScrollPhysics(),
+    itemBuilder: (BuildContext context, int index) {
+      // Add a return statement here
+      return AvatarWithText(
+        imagePath: languagesUnavailable[index].imagePath,
+        text: languagesUnavailable[index].name,
+      );
+    },
+  );
+}
+
+
 }

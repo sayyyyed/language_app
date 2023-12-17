@@ -8,8 +8,11 @@ import 'package:language_app/style/text.dart';
 
 class Courses extends StatelessWidget {
   final List<Map<String, dynamic>> courses;
+  final String? category;
+
   const Courses({
     super.key,
+     required this.category,
     required this.courses,
   });
 
@@ -36,7 +39,7 @@ class Courses extends StatelessWidget {
             body: SingleChildScrollView(
                 child: Column(
               children: [
-                CoursesHeader(context),
+                CoursesHeader(context, category: category!),
                 Container(
                   margin:
                       EdgeInsets.only(top: 20, bottom: 15, left: 40, right: 40),
@@ -51,7 +54,7 @@ class Courses extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(top: 10),
                         child: Text(
-                          'ganti dengan title',
+                          'You can learn a new language at any age. In fact, learning a new language can help keep your brain healthy and sharp!',
                           style:
                               headingFirst(fontSize: 12, color: Colors.black87),
                         ),

@@ -55,11 +55,11 @@ class _RegisterState extends State<Register> {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              "Register",
+              "Let's Join Lingolatte",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
             ),
             const SizedBox(
@@ -110,7 +110,7 @@ class _RegisterState extends State<Register> {
               width: double.infinity,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurple,
+                  backgroundColor: Color.fromARGB(255, 44, 53, 118),
                 ),
                 onPressed: _register,
                 child: const Text(
@@ -138,7 +138,7 @@ class _RegisterState extends State<Register> {
                   },
                   child: const Text(
                     "Login.",
-                    style: TextStyle(color: Colors.deepPurple),
+                    style: TextStyle(color: Color.fromARGB(255, 44, 53, 118)),
                   ),
                 ),
               ],

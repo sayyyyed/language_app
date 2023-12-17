@@ -1,8 +1,9 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
-import 'package:language_app/dashboard/main_dashboard.dart';
 import 'package:language_app/style/text.dart';
 
-Column CoursesHeader(BuildContext context) {
+Column CoursesHeader(BuildContext context, {String? category}) {
   return Column(
     children: <Widget>[
       Column(
@@ -61,7 +62,7 @@ Column CoursesHeader(BuildContext context) {
                                     ),
                                   ],
                                 ),
-                                Text('Wechselprapositionen',
+                                Text(category!,
                                     style: headingFirst(fontSize: 30)),
                               ],
                             ),

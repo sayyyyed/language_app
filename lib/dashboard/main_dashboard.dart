@@ -5,6 +5,7 @@ import 'package:language_app/dashboard/header_dashboard.dart';
 import 'package:language_app/dashboard/list.dart';
 import 'package:language_app/dashboard/list_vertical.dart';
 import 'package:language_app/viewmodel/fetch_german.dart';
+import 'package:language_app/viewmodel/fetch_portuguese.dart';
 
 class Dashboard extends StatelessWidget {
   final String? firstName;
@@ -31,16 +32,17 @@ class Dashboard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     Image.asset(
-                      'assets/img/german_icon.png',
+                      selectedIndex == 1
+                          ? 'assets/img/portugal_icon.png'
+                          : 'assets/img/german_icon.png',
                       width: 40.0,
                       height: 40.0,
-                      // color: Colors.black,
                     ),
                     SizedBox(
                       width: 10,
                     ),
                     Text(
-                      'Deutsch',
+                      selectedIndex == 1 ? 'Portuguese' : 'Deutsch',
                       style: TextStyle(
                         color: Colors.black87,
                         fontSize: 20.0,
@@ -51,21 +53,22 @@ class Dashboard extends StatelessWidget {
                 ),
               ),
               FutureBuilder<List<Map<String, dynamic>>>(
-                future: FetchGerman.fetchData(),
-                builder: (context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    // Menampilkan indikator loading jika data masih diambil
-                    return CircularProgressIndicator();
-                  } else if (snapshot.hasError) {
-                    // Menampilkan pesan error jika terjadi kesalahan
-                    return Text('Error: ${snapshot.error}');
-                  } else {
-                    // Jika data berhasil diambil, tampilkan di HorizontalSliderListView
-                    List<Map<String, dynamic>> germanData = snapshot.data!;
-                    return SizedBox(
-                    
-                      child: HorizontalSliderListView(data: germanData),
-                    );
+    future: selectedIndex == 1
+        ? FetchPortuguese.fetchData()
+        : FetchGerman.fetchData(),
+    builder: (context, snapshot) {
+      if (snapshot.connectionState == ConnectionState.waiting) {
+        // Menampilkan indikator loading jika data masih diambil
+        return CircularProgressIndicator();
+      } else if (snapshot.hasError) {
+        // Menampilkan pesan error jika terjadi kesalahan
+        return Text('Error: ${snapshot.error}');
+      } else {
+        // Jika data berhasil diambil, tampilkan di HorizontalSliderListView
+        List<Map<String, dynamic>> selectedData = snapshot.data!;
+        return SizedBox(
+          child: HorizontalSliderListView(data: selectedData),
+        );
                   }
                 },
               ),
@@ -75,7 +78,7 @@ class Dashboard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
-                      'Courses',
+                      'Achievment',
                       style: TextStyle(
                         color: Colors.black87,
                         fontSize: 20.0,

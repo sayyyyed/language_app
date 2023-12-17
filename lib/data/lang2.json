@@ -57,25 +57,25 @@
           {
             "title": "Introduction to Noun",
             "category": "Noun",
-            "description": "This course provides an introduction to nouns in the German language. Learn about different types of nouns, gender, and their roles in sentences.",
-            "image": "assets/img/model_1.png",
-            "difficulty": "A1.2",
+            "description": "In Portuguese, nouns are words that refer to people, places, things, or ideas. They can be used with articles (a, an, the) or without articles. In this course, you will learn about the different types of nouns in Portuguese and how to use them in sentences.",
+            "image": "assets/img/model_3.png",
+            "difficulity": "A1.2",
             "time": "12 min"
           },
           {
             "title": "Common Nouns",
             "category": "Noun",
-            "description": "Explore commonly used nouns in German. Enhance your vocabulary and understanding of noun usage.",
-            "image": "assets/img/model_2.png",
-            "difficulty": "A1.2",
+            "description": "There are two types of common nouns in Portuguese: countable and uncountable. Countable nouns refer to things that can be counted, such as a book, a cat, or a house. Uncountable nouns refer to things that cannot be counted, such as water, air, or love.",
+            "image": "assets/img/model_3.png",
+            "difficulity": "A1.2",
             "time": "10 min"
           },
           {
             "title": "Noun Gender",
             "category": "Noun",
-            "description": "Understand the concept of gender in German nouns. Learn about masculine, feminine, and neuter nouns.",
+            "description": "Gender in Portuguese is a grammatical category that indicates whether a noun is masculine or feminine. In this course, you will learn about the different types of nouns in Portuguese and how to use them in sentences.",
             "image": "assets/img/model_3.png",
-            "difficulty": "A1.2",
+            "difficulity": "A1.2",
             "time": "15 min"
           }
         ]
@@ -89,25 +89,25 @@
           {
             "title": "Introduction to Verbs",
             "category": "Verbs",
-            "description": "Explore the basics of verbs in German. Learn about verb conjugation, tenses, and how verbs function in sentences.",
-            "image": "assets/img/model_1.png",
-            "difficulty": "A2.1",
+            "description": "We can say in Portuguese that a verb is a word that expresses an action, an event, or a state of being. In this course, you will learn about the different types of verbs in Portuguese and how to use them in sentences.",
+            "image": "assets/img/model_2.png",
+            "difficulity": "A2.1",
             "time": "15 min"
           },
           {
             "title": "Irregular Verbs",
             "category": "Verbs",
-            "description": "Study irregular verbs in German. Understand their unique conjugation patterns and usage.",
+            "description": "Irregular verbs are verbs that do not follow the regular conjugation patterns of the language. For example, the verb to be is irregular in English because it does not follow the pattern of adding -ed to form the past tense. In this course, you will learn about the different types of irregular verbs in Portuguese and how to use them in sentences.",
             "image": "assets/img/model_3.png",
-            "difficulty": "A2.2",
+            "difficulity": "A2.2",
             "time": "12 min"
           },
           {
             "title": "Modal Verbs",
             "category": "Verbs",
-            "description": "Learn about modal verbs and their role in expressing ability, necessity, and permission in German.",
-            "image": "assets/img/model_2.png",
-            "difficulty": "B1.1",
+            "description": "We can say 'Obrigado' in Portuguese that a modal verb is a type of auxiliary verb that expresses modality. In this course, you will learn about the different types of modal verbs in Portuguese and how to use them in sentences.",
+            "image": "assets/img/model_3.png",
+            "difficulity": "B1.1",
             "time": "18 min"
           }
         ]
@@ -121,25 +121,25 @@
           {
             "title": "Building Sentences",
             "category": "Sentences",
-            "description": "Learn the essentials of constructing sentences in German. Understand sentence structure, word order, and common sentence patterns.",
+            "description": "Sentence in Portuguese for example ' Eu gosto de estudar Português' is a group of words that expresses a complete thought. In this course, you will learn about the different types of sentences in Portuguese and how to use them in sentences.",
             "image": "assets/img/model_2.png",
-            "difficulty": "B1.1",
+            "difficulity": "B1.1",
             "time": "18 min"
           },
           {
             "title": "Complex Sentences",
             "category": "Sentences",
-            "description": "Explore the construction of complex sentences in German. Combine multiple ideas to form cohesive and advanced sentences.",
+            "description": "A complex sentence is a sentence that contains an independent clause and one or more dependent clauses. In this course, you will learn about the different types of complex sentences in Portuguese and how to use them in sentences.",
             "image": "assets/img/model_1.png",
-            "difficulty": "B2.1",
+            "difficulity": "B2.1",
             "time": "20 min"
           },
           {
             "title": "Sentence Types",
             "category": "Sentences",
-            "description": "Understand different types of sentences, including declarative, interrogative, imperative, and exclamatory sentences in German.",
+            "description": "In Roman Language Portuguese, there are four types of sentences: declarative, interrogative, imperative, and exclamatory. In this course, you will learn about the different types of sentences in Portuguese and how to use them in sentences.",
             "image": "assets/img/model_1.png",
-            "difficulty": "B2.2",
+            "difficulity": "B2.2",
             "time": "15 min"
           }
         ]

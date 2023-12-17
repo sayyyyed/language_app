@@ -29,10 +29,7 @@ class _loginState extends State<Login> {
   User? user = await _authService.loginWithEmailandPassword(email, password, context);
 
   if (user != null) {
-    // Fetch user data from Firestore based on email
     String? firstName = await _authService.getUserFirstName(email);
-    //debug first name
-    // print('User first name: $firstName');
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         content: Text("Login successful"),
@@ -40,7 +37,6 @@ class _loginState extends State<Login> {
       ),
     );
 
-    // Navigate to homepage.dart and pass the user data
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -50,18 +46,17 @@ class _loginState extends State<Login> {
   }
 }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              "Login to continue",
+              "Let's learn with Lingolatte",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
             ),
             const SizedBox(
@@ -93,7 +88,7 @@ class _loginState extends State<Login> {
               width: double.infinity,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple),
+                      backgroundColor: Color.fromARGB(255, 44, 53, 118)),
                   onPressed: () {
                     login();
                   },
@@ -119,7 +114,7 @@ class _loginState extends State<Login> {
                     },
                     child: const Text(
                       "Register.",
-                      style: TextStyle(color: Colors.deepPurple),
+                      style: TextStyle(color: Color.fromARGB(255, 44, 53, 118)),
                     ))
               ],
             )
