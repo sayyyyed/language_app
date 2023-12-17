@@ -1,0 +1,149 @@
+{
+    "data": [
+      {
+        "title": "Preposisi",
+        "description": "Course 9/10",
+        "imageUrl": "assets/img/model_1.png",
+        "progress": 0.7,
+        "courses": [
+          {
+            "title": "Quando usar relativas",
+            "category": "Preposisi",
+            "description": "Neste curso, você aprenderá como usar as orações relativas em Português. As orações relativas são usadas para ligar frases e formar sentenças mais complexas. Elas são introduzidas por pronomes relativos como que, o qual, a qual, os quais, as quais, onde, quando, por que, como, entre outros.",
+            "image": "assets/img/model_3.png",
+            "difficulity": "A1.2",
+            "time": "10 min"
+          },
+          {
+            "title": "Quando usar o Pretérito Perfeito",
+            "category": "Preposisi",
+            "description": "O Português geralmente usa o pretérito perfeito para falar sobre eventos passados, assim como o inglês. O pretérito perfeito refere-se a uma ação que ocorreu em algum momento do passado e ainda está em andamento.",
+            "image": "assets/img/model_3.png",
+            "difficulity": "A1.2",
+            "time": "10 min"
+          },
+          {
+            "title": "Como usar o Acusativo e Dativo",
+            "category": "Preposisi",
+            "description": "O Português utiliza o caso acusativo para indicar o objeto direto de uma frase. O objeto direto é a pessoa ou coisa que recebe a ação expressa pelo verbo. O caso acusativo também é usado após certas preposições, como por, para, contra, sem, a, entre outras.",
+            "image": "assets/img/model_3.png",
+            "difficulity": "A1.2",
+            "time": "10 min"
+          },
+          {
+            "title": "Verbos Modais",
+            "category": "Preposisi",
+            "description": "Para tornar uma frase negativa em Português, você geralmente usa a palavra não. No entanto, ao usar um verbo modal, a palavra não é colocada após o verbo modal e não no final da frase.",
+            "image": "assets/img/model_3.png",
+            "difficulity": "A1.2",
+            "time": "10 min"
+          },
+          {
+            "title": "Palavras Interrogativas",
+            "category": "Preposisi",
+            "description": "Você sabe como fazer perguntas em Português? Neste curso, você aprenderá como usar as palavras interrogativas em Português. As palavras interrogativas são usadas para fazer perguntas como o quê, onde, quando, por quê, como, entre outras. Elas também são chamadas de pronomes interrogativos.",
+            "image": "assets/img/model_3.png",
+            "difficulity": "A1.2",
+            "time": "10 min"
+          }
+        ]
+      },
+      {
+        "title": "Noun",
+        "description": "Course 10/10",
+        "imageUrl": "assets/img/model_1.png",
+        "progress": 0.8,
+        "courses": [
+          {
+            "title": "Introduction to Noun",
+            "category": "Noun",
+            "description": "This course provides an introduction to nouns in the German language. Learn about different types of nouns, gender, and their roles in sentences.",
+            "image": "assets/img/model_1.png",
+            "difficulty": "A1.2",
+            "time": "12 min"
+          },
+          {
+            "title": "Common Nouns",
+            "category": "Noun",
+            "description": "Explore commonly used nouns in German. Enhance your vocabulary and understanding of noun usage.",
+            "image": "assets/img/model_2.png",
+            "difficulty": "A1.2",
+            "time": "10 min"
+          },
+          {
+            "title": "Noun Gender",
+            "category": "Noun",
+            "description": "Understand the concept of gender in German nouns. Learn about masculine, feminine, and neuter nouns.",
+            "image": "assets/img/model_3.png",
+            "difficulty": "A1.2",
+            "time": "15 min"
+          }
+        ]
+      },
+      {
+        "title": "Verbs",
+        "description": "Course 11/10",
+        "imageUrl": "assets/img/model_2.png",
+        "progress": 0.9,
+        "courses": [
+          {
+            "title": "Introduction to Verbs",
+            "category": "Verbs",
+            "description": "Explore the basics of verbs in German. Learn about verb conjugation, tenses, and how verbs function in sentences.",
+            "image": "assets/img/model_1.png",
+            "difficulty": "A2.1",
+            "time": "15 min"
+          },
+          {
+            "title": "Irregular Verbs",
+            "category": "Verbs",
+            "description": "Study irregular verbs in German. Understand their unique conjugation patterns and usage.",
+            "image": "assets/img/model_3.png",
+            "difficulty": "A2.2",
+            "time": "12 min"
+          },
+          {
+            "title": "Modal Verbs",
+            "category": "Verbs",
+            "description": "Learn about modal verbs and their role in expressing ability, necessity, and permission in German.",
+            "image": "assets/img/model_2.png",
+            "difficulty": "B1.1",
+            "time": "18 min"
+          }
+        ]
+      },
+      {
+        "title": "Sentences",
+        "description": "Course 12/10",
+        "imageUrl": "assets/img/model_3.png",
+        "progress": 1.0,
+        "courses": [
+          {
+            "title": "Building Sentences",
+            "category": "Sentences",
+            "description": "Learn the essentials of constructing sentences in German. Understand sentence structure, word order, and common sentence patterns.",
+            "image": "assets/img/model_2.png",
+            "difficulty": "B1.1",
+            "time": "18 min"
+          },
+          {
+            "title": "Complex Sentences",
+            "category": "Sentences",
+            "description": "Explore the construction of complex sentences in German. Combine multiple ideas to form cohesive and advanced sentences.",
+            "image": "assets/img/model_1.png",
+            "difficulty": "B2.1",
+            "time": "20 min"
+          },
+          {
+            "title": "Sentence Types",
+            "category": "Sentences",
+            "description": "Understand different types of sentences, including declarative, interrogative, imperative, and exclamatory sentences in German.",
+            "image": "assets/img/model_1.png",
+            "difficulty": "B2.2",
+            "time": "15 min"
+          }
+        ]
+    }
+    ]
+  }
+  

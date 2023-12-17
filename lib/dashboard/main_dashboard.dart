@@ -4,6 +4,7 @@ import 'package:language_app/data/data.dart';
 import 'package:language_app/dashboard/header_dashboard.dart';
 import 'package:language_app/dashboard/list.dart';
 import 'package:language_app/dashboard/list_vertical.dart';
+import 'package:language_app/viewmodel/fetch_german.dart';
 
 class Dashboard extends StatelessWidget {
   final String? firstName;
@@ -49,8 +50,24 @@ class Dashboard extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
-                child: HorizontalSliderListView(data: data),
+              FutureBuilder<List<Map<String, dynamic>>>(
+                future: FetchGerman.fetchData(),
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    // Menampilkan indikator loading jika data masih diambil
+                    return CircularProgressIndicator();
+                  } else if (snapshot.hasError) {
+                    // Menampilkan pesan error jika terjadi kesalahan
+                    return Text('Error: ${snapshot.error}');
+                  } else {
+                    // Jika data berhasil diambil, tampilkan di HorizontalSliderListView
+                    List<Map<String, dynamic>> germanData = snapshot.data!;
+                    return SizedBox(
+                    
+                      child: HorizontalSliderListView(data: germanData),
+                    );
+                  }
+                },
               ),
               Container(
                 margin: EdgeInsets.only(top: 20, bottom: 20, left: 20),

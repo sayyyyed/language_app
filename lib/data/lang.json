@@ -1,0 +1,139 @@
+{ "data":[
+    {
+      "title": "Preposisi",
+      "description": "Course 9/10",
+      "imageUrl": "assets/img/model_1.png",
+      "progress": 0.7,
+      "courses": [
+        {
+          "title": "When to use relativsatze",
+          "category": "Wechselprapositonen",
+          "description": "In this course you will learn how to use the relative clauses in German. Relative clauses are used to link sentences together and to form more complex sentences. They are introduced by relative pronouns such as der, die, das, welcher, welche, welches, was, and more.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "When to use Das Perfekt",
+          "category": "Wechselprapositonen",
+          "description": "German usually uses the present perfect tense (das Perfekt) to talk about past events, as in English. The present perfect tense refers to an action that took place at some time in the past and is still ongoing.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "How to use the Akkusativ and Dativ",
+          "category": "Wechselprapositonen",
+          "description": "German use the accusative case to indicate the direct object of a sentence. The direct object is the person or thing that receives the action expressed by the verb. The accusative case is also used after certain prepositions, such as durch, für, gegen, ohne, um, and wider.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "Modal Verbs",
+          "category": "Wechselprapositonen",
+          "description": "To make a sentence negative in German you usually use the word nicht. However, when you use a modal verb, the word nicht is placed after the modal verb and not at the end of the sentence.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "Question Words",
+          "category": "Wechselprapositonen",
+          "description": "Do you know how to ask questions in German? In this course you will learn how to use the question words in German. The question words are used to ask questions such as what, where, when, why, and how. They are also called interrogative pronouns.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        }
+      ]
+    },
+    {
+      "title": "Conjunctions",
+      "description": "Course 1/5",
+      "imageUrl": "assets/img/model_2.png",
+      "progress": 0.3,
+      "courses": [
+        {
+          "title": "Subordinating Conjunctions",
+          "category": "Conjunctions",
+          "description": "The subordinating conjunctions are used to join a subordinate clause to a main clause. The subordinate clause is dependent on the main clause and cannot make sense on its own. The subordinating conjunctions are used to join a subordinate clause to a main clause. The subordinate clause is dependent on the main clause and cannot make sense on its own.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "Coordinating Conjunctions",
+          "category": "Conjunctions",
+          "description": "The coordinating conjunctions are used to join two or more words, phrases, or clauses of equal importance. The coordinating conjunctions are used to join two or more words, phrases, or clauses of equal importance. The coordinating conjunctions are used to join two or more words, phrases, or clauses of equal importance. The coordinating conjunctions are used to join two or more words, phrases, or clauses of equal importance. The coordinating conjunctions are used to join two or more words, phrases, or clauses of equal importance. The coordinating conjunctions are used to join two or more words, phrases, or clauses of equal importance. The coordinating conjunctions are used to join two or more words, phrases, or clauses of equal importance. The coordinating conjunctions are used to join two or more words, phrases, or clauses of equal importance. ",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "Correlative Conjunctions",
+          "category": "Conjunctions",
+          "description": "The correlative conjunctions are used to join two or more words, phrases, or clauses of equal importance. The correlative conjunctions are used to join two or more words, phrases, or clauses of equal importance. The correlative conjunctions are used to join two or more words, phrases, or clauses of equal importance. The correlative conjunctions are used to join two or more words, phrases, or clauses of equal importance. The correlative conjunctions are used to join two or more words, phrases, or clauses of equal importance. The correlative conjunctions are used to join two or more words, phrases, or clauses of equal importance. The correlative conjunctions are used to join two or more words, phrases, or clauses of equal importance. The correlative conjunctions are used to join two or more words, phrases, or clauses of equal importance. ",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "Conjunctive Adverbs",
+          "category": "Conjunctions",
+          "description": "The conjunctive adverbs are used to join two or more words, phrases, or clauses of equal importance. The conjunctive adverbs are used to join two or more words, phrases, or clauses of equal importance. The conjunctive adverbs are used to join two or more words, phrases, or clauses of equal importance. The conjunctive adverbs are used to join two or more words, phrases, or clauses of equal importance. The conjunctive adverbs are used to join two or more words, phrases, or clauses of equal importance. The conjunctive adverbs are used to join two or more words, phrases, or clauses of equal importance. The conjunctive adverbs are used to join two or more words, phrases, or clauses of equal importance. The conjunctive adverbs are used to join two or more words, phrases, or clauses of equal importance. ",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        }
+      ]
+    },
+    {
+      "title": "Adverbs",
+      "description": "Course 1/5",
+      "imageUrl": "assets/img/model_2.png",
+      "progress": 0.3,
+      "courses": [
+        {
+          "title": "Introduction to Adverbs",
+          "category": "Adverbs",
+          "description": "Adverb is a word that modifies a verb, adjective, or another adverb. Adverbs are used to describe how, where, when, and how often something happens. Adverb is a word that modifies a verb, adjective, or another adverb. Adverbs are used to describe how, where, when, and how often something happens. Adverb is a word that modifies a verb, adjective, or another adverb. Adverbs are used to describe how, where, when, and how often something happens. Adverb is a word that modifies a verb, adjective, or another adverb. Adverbs are used to describe how, where, when, and how often something happens. Adverb is a word that modifies a verb, adjective, or another adverb. Adverbs are used to describe how, where, when, and how often something happens. Adverb is a word that modifies a verb, adjective, or another adverb. Adverbs are used to describe how, where, when, and how often something happens.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "Types of Adverbs",
+          "category": "Adverbs",
+          "description": "Adverbs are divided into different categories depending on what they describe. Adverbs of manner describe how something happens. Adverbs of place describe where something happens. Adverbs of time describe when something happens. Adverbs of frequency describe how often something happens. Adverbs of degree describe the degree or intensity of an action, an adjective, or another adverb. Adverbs of manner describe how something happens. Adverbs of place describe where something happens. Adverbs of time describe when something happens. Adverbs of frequency describe how often something happens. Adverbs of degree describe the degree or intensity of an action, an adjective, or another adverb. Adverbs of manner describe how something happens. Adverbs of place describe where something happens. Adverbs of time describe when something happens. Adverbs of frequency describe how often something happens. Adverbs of degree describe the degree or intensity of an action, an adjective, or another adverb.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "Comparative and Superlative Adverbs",
+          "category": "Adverbs",
+          "description": "When we want to compare two or more things, we can use comparative adverbs. Comparative adverbs are used to compare two or more things. They are usually formed by adding -er to the end of the adverb, or by using more before the adverb. When we want to compare two or more things, we can use comparative adverbs. Comparative adverbs are used to compare two or more things. They are usually formed by adding -er to the end of the adverb, or by using more before the adverb. When we want to compare two or more things, we can use comparative adverbs. Comparative adverbs are used to compare two or more things. They are usually formed by adding -er to the end of the adverb, or by using more before the adverb. When we want to compare two or more things, we can use comparative adverbs. Comparative adverbs are used to compare two or more things. They are usually formed by adding -er to the end of the adverb, or by using more before the adverb.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "Adverbs of Frequency",
+          "category": "Adverbs",
+          "description": "We can use adverbs of frequency to say how often we do something. Adverbs of frequency are usually placed before the main verb, but after auxiliary verbs such as be, have, can, may, must. We can use adverbs of frequency to say how often we do something. Adverbs of frequency are usually placed before the main verb, but after auxiliary verbs such as be, have, can, may, must. We can use adverbs of frequency to say how often we do something. Adverbs of frequency are usually placed before the main verb, but after auxiliary verbs such as be, have, can, may, must. We can use adverbs of frequency to say how often we do something. Adverbs of frequency are usually placed before the main verb, but after auxiliary verbs such as be, have, can, may, must. We can use adverbs of frequency to say how often we do something. Adverbs of frequency are usually placed before the main verb, but after auxiliary verbs such as be, have, can, may, must.",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        },
+        {
+          "title": "Adverbs of Time",
+          "category": "Adverbs",
+          "description": "Time adverbs are used to express when an action happened, how long it took place, or how often it occurs. They are usually placed at the beginning or end of a sentence. Time adverbs are used to express when an action happened, how long it took place, or how often it occurs. They are usually placed at the beginning or end of a sentence. Time adverbs are used to express when an action happened, how long it took place, or how often it occurs. They are usually placed at the beginning or end of a sentence. Time adverbs are used to express when an action happened, how long it took place, or how often it occurs. They are usually placed at the beginning or end of a sentence. Time adverbs are used to express when an action happened, how long it took place, or how often it occurs. They are usually placed at the beginning or end of a sentence. Time adverbs are used to express when an action happened, how long it took place, or how often it occurs. They are usually placed at the beginning or end of a sentence. ",
+          "image": "assets/img/model_3.png",
+          "difficulity": "A1.2",
+          "time": "10 min"
+        }
+      ]
+    }
+  ]
+}

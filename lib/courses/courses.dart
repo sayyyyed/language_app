@@ -7,7 +7,11 @@ import 'package:language_app/description.dart';
 import 'package:language_app/style/text.dart';
 
 class Courses extends StatelessWidget {
-  const Courses({super.key});
+  final List<Map<String, dynamic>> courses;
+  const Courses({
+    super.key,
+    required this.courses,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +51,7 @@ class Courses extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(top: 10),
                         child: Text(
-                          'Wechselprapositionen is a course that will help you to learn the prepositions that are used with the accusative and dative cases. This course is for A1.2 level students',
+                          'ganti dengan title',
                           style:
                               headingFirst(fontSize: 12, color: Colors.black87),
                         ),
@@ -62,7 +66,7 @@ class Courses extends StatelessWidget {
                     enlargeCenterPage: true,
                     enlargeStrategy: CenterPageEnlargeStrategy.height,
                   ),
-                  items: dataCourses
+                  items: courses
                       .map((course) => HeroCarouselCard(
                             title: course['title']!,
                             description: course['description']!,

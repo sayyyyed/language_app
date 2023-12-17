@@ -36,14 +36,7 @@ class MyHomePage extends StatelessWidget {
                     style: headingSec(),
                   ),
                 ),
-                Container(
-                  
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(builder: (context) => Dashboard( firstName: firstName)),
-                    //   );
-                    // },
+                Container( 
                     child: buildLanguageGrid(),
                  
                 ),

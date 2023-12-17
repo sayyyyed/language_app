@@ -51,12 +51,7 @@ Column CoursesHeader(BuildContext context) {
                                     ),
                                     GestureDetector(
                                       onTap: () {
-                                        Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  Dashboard()),
-                                        );
+                                        Navigator.pop(context);
                                       },
                                       child: Icon(
                                         Icons.arrow_back,
