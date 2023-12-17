@@ -1,9 +1,9 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:language_app/firebase/firebase_auth_service.dart' as lib1;
-import 'package:language_app/homepage.dart';
-import 'package:language_app/register.dart';
+import 'package:language_app/services/firebase_auth_service.dart' as lib1;
+import 'package:language_app/views/homepage.dart';
+import 'package:language_app/views/register.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:language_app/courses/courses.dart';
-import 'package:language_app/dashboard/main_dashboard.dart';
-import 'package:language_app/firebase/firebase_options.dart';
-import 'package:language_app/homepage.dart';
-import 'package:language_app/login.dart';
+import 'package:language_app/services/firebase_options.dart';
+import 'package:language_app/views/courses/courses.dart';
+import 'package:language_app/views/dashboard/main_dashboard.dart';
+import 'package:language_app/views/homepage.dart';
+import 'package:language_app/views/login.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:language_app/views/register.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   var app = await Firebase.initializeApp(
@@ -19,6 +20,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+       routes: {
+        '/login': (context) => const Login(),
+        '/register': (context) => const Register(),
+        '/homepage': (context) =>  MyHomePage(),
+        '/dashboard': (context) =>  const Dashboard(),
+        '/course': (context) =>  const Courses(category: '', courses: [],),
+       },
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -26,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  Login(),
+      home:  const Login(),
     );
   }
 }

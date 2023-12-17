@@ -1,10 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:language_app/courses/courses_header.dart';
-import 'package:language_app/data/courses_list.dart';
-import 'package:language_app/description.dart';
-import 'package:language_app/style/text.dart';
+import 'package:language_app/views/courses/courses_header.dart';
+import 'package:language_app/views/description.dart';
+import 'package:language_app/views/style/text.dart';
 
 class Courses extends StatelessWidget {
   final List<Map<String, dynamic>> courses;

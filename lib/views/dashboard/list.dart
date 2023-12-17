@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import 'package:language_app/data/progress_bar.dart';
-import 'package:language_app/style/text.dart';
-import 'package:language_app/courses/courses.dart';
+import 'package:language_app/models/progress_bar.dart';
+import 'package:language_app/views/style/text.dart';
+import 'package:language_app/views/courses/courses.dart';
 
 class HorizontalSliderListView extends StatelessWidget {
   final List<Map<String, dynamic>> data;

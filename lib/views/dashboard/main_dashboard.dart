@@ -1,20 +1,16 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors
 import 'package:flutter/material.dart';
-import 'package:language_app/data/data.dart';
-import 'package:language_app/dashboard/header_dashboard.dart';
-import 'package:language_app/dashboard/list.dart';
-import 'package:language_app/dashboard/list_vertical.dart';
+import 'package:language_app/models/data.dart';
+import 'package:language_app/views/dashboard/header_dashboard.dart';
+import 'package:language_app/views/dashboard/list.dart';
+import 'package:language_app/views/dashboard/list_vertical.dart';
 import 'package:language_app/viewmodel/fetch_german.dart';
 import 'package:language_app/viewmodel/fetch_portuguese.dart';
 
 class Dashboard extends StatelessWidget {
   final String? firstName;
-
   final int? selectedIndex;
-
   const Dashboard({Key? key, this.firstName, this.selectedIndex})
       : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -53,22 +49,19 @@ class Dashboard extends StatelessWidget {
                 ),
               ),
               FutureBuilder<List<Map<String, dynamic>>>(
-    future: selectedIndex == 1
-        ? FetchPortuguese.fetchData()
-        : FetchGerman.fetchData(),
-    builder: (context, snapshot) {
-      if (snapshot.connectionState == ConnectionState.waiting) {
-        // Menampilkan indikator loading jika data masih diambil
-        return CircularProgressIndicator();
-      } else if (snapshot.hasError) {
-        // Menampilkan pesan error jika terjadi kesalahan
-        return Text('Error: ${snapshot.error}');
-      } else {
-        // Jika data berhasil diambil, tampilkan di HorizontalSliderListView
-        List<Map<String, dynamic>> selectedData = snapshot.data!;
-        return SizedBox(
-          child: HorizontalSliderListView(data: selectedData),
-        );
+                future: selectedIndex == 1
+                    ? FetchPortuguese.fetchData()
+                    : FetchGerman.fetchData(),
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return CircularProgressIndicator();
+                  } else if (snapshot.hasError) {
+                    return Text('Error: ${snapshot.error}');
+                  } else {
+                    List<Map<String, dynamic>> selectedData = snapshot.data!;
+                    return SizedBox(
+                      child: HorizontalSliderListView(data: selectedData),
+                    );
                   }
                 },
               ),

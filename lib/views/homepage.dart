@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:language_app/data/language.dart';
-import 'package:language_app/style/avatar.dart';
-import 'package:language_app/style/text.dart';
-import 'package:language_app/dashboard/main_dashboard.dart';
+import 'package:language_app/models/language.dart';
+import 'package:language_app/views/style/avatar.dart';
+import 'package:language_app/views/style/text.dart';
+import 'package:language_app/views/dashboard/main_dashboard.dart';
 
 class MyHomePage extends StatelessWidget {
   final String? firstName;

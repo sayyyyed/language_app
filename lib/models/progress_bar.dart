@@ -5,11 +5,9 @@ import 'package:flutter/material.dart';
 class DividedProgressBar extends StatelessWidget {
   final double progress;
   
-
   DividedProgressBar({
     required this.progress,
   });
-
   @override
   Widget build(BuildContext context) {
     return CustomPaint(
@@ -18,7 +16,6 @@ class DividedProgressBar extends StatelessWidget {
     );
   }
 }
-
 class DividedProgressBarPainter extends CustomPainter {
   final double progress;
   final double gapWidth; // Width of the gap between segments
